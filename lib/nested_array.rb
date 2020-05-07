@@ -1,17 +1,12 @@
+require "pry"
+
 # Examples inspired by U. S. National Organic Standards
 
 ORGANIC_PRODUCE = ["Strawberries","Potatoes","Grapes","Avocadoes","Asparagus"],
 
 CONVENTIONAL_PRODUCE = ["Grapefruit","Pineapple","Oranges","Watermelon","Eggplant"]
 
-
-def assembled_matrix
-  
-  assembled_matrix = [ORGANIC_PRODUCE], [CONVENTIONAL_PRODUCE]
-    
-end
-
-
+ 
 
 def sorted_matrix 
    
@@ -26,27 +21,23 @@ end
 
 def matrix_lookup(matrix, row, column)
   
-  assembled_matrix[1][1]
+ 
+  
+  matrix[row][column]
   
    # Given any matrix (array of arrays), a row index and a column index, 
   # Return the matrix's content at that row and and column
   
- 
-
-
  end 
   
- 
- 
  def assembled_matrix
-   
-   
+   binding.pry
+[CONVENTIONAL_PRODUCE, ORGANIC_PRODUCE]
    
   # Build an array that contains both of the above arrays
   # This matrix will represent a produce storage room
   # Organic standards require that organic products be stored ABOVE conventional, not the other way around
   # Make sure conventional produce is first, on the 'zeroth' / 'bottom' shelf
-  
 end
   
    
